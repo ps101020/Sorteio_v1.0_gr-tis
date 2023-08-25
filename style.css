@@ -1,0 +1,55 @@
+
+body { width: 360px; align-items: center; margin:20px;
+   background-image:url("myphoto.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment:fixed;
+}
+
+.container {
+    display: flex; justify-content: center; align-items: center;
+    background-color: whitesmoke; opacity:0.8;
+    margin:10px;
+}
+
+select {
+    display: flex; justify-content: center; align-items: center;
+}
+option {
+    border-color: yellowgreen;
+}
+
+.numeros {
+     background-color: whitesmoke; opacity:0.8;
+    margin:10px;
+}
+ button {
+     margin:2px; width: 60px; height:60px;
+     font-weigth: strong;
+ }
+.bloco1 {
+    margin-top:330px;
+}
+.mostre {
+    background-color: yellow;
+    opacity: 0.8;
+    border: outset 5px grey;
+    width: 98%;
+   font-weigth: bold;
+    font-size: 20px;
+    color: grey;
+}
+
+.sorteio {
+    background-color: yellowgreen;
+    opacity: 0.8;
+    border: outset 5px grey;
+    width: 98%;
+   font-weigth: bold;
+    font-size: 20px;
+    color: grey;
+}
+input  { display:block;
+    outline-color: purple; width: 88%;
+    color: purple; text-align: center; margin:5px
+}

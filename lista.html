@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+ 
+     <title>my-app</title>
+          
+          
+</head>
+<body>
+       <audio class="s" src="sorte.mp3" controls hidden></audio>  
+        <audio class="erro" src="erro.mp3" controls hidden></audio>  
+       
+              
+             <br>
+            
+             <br>
+     
+     <div class="container">
+         
+         <div class="list"> 
+    
+         
+         <ol>
+             <h3>LISTAGEM DE NOMES </h3>
+             <li class="l1"></li>
+             <hr>
+             <li class="l2"></li>
+             <hr>
+               <li class="l3"></li>
+               <hr>
+             <li class="l4"></li>
+             <hr>
+               <li class="l5"></li>
+               <hr>
+             <li class="l6"></li>
+             <hr>
+               <li class="l7"></li>
+               <hr>
+             <li class="l8"></li>
+             <hr>
+               <li class="l9"></li>
+               <hr>
+             <li class="l10"></li>
+             
+           
+             <hr>
+            
+             
+              <li class="l11"></li>
+             <hr>
+             <li class="l12"></li>
+             <hr>
+               <li class="l13"></li>
+               <hr>
+             <li class="l14"></li>
+             <hr>
+               <li class="l15"></li>
+               <hr>
+             <li class="l16"></li>
+             <hr>
+               <li class="l17"></li>
+               <hr>
+             <li class="l18"></li>
+             <hr>
+               <li class="l19"></li>
+               <hr>
+             <li class="l20"></li>
+             
+             
+             
+             
+         </ol>
+        
+             
+             
+         
+           
+         
+              
+     </div>
+    
+   
+     </div>
+     
+        
+            <button class="mostre" id="mostre" onclick="resetar()">
+       REINICIAR || LIMPAR
+    </button>  <br>
+    
+     
+       <script>
+           //listagem
+           
+           document.querySelector(".l1").innerText=" ✅️ " +localStorage.getItem("nome1"); 
+           
+         
+           
+      
+           document.querySelector(".l2").innerText=" ✅️ " +localStorage.getItem("nome2");   
+           
+           
+   document.querySelector(".l3").innerText=" ✅️ " +localStorage.getItem("nome3"); 
+    
+    document.querySelector(".l4").innerText=" ✅️ " +localStorage.getItem("nome4");  
+     
+    document.querySelector(".l5").innerText=" ✅️ " +localStorage.getItem("nome5");  
+      
+      document.querySelector(".l6").innerText=" ✅️ " +localStorage.getItem("nome6");  
+      
+           document.querySelector(".l7").innerText=" ✅️ " +localStorage.getItem("nome7");  
+           
+           document.querySelector(".l8").innerText=" ✅️ " +localStorage.getItem("nome8");  
+           
+           document.querySelector(".l9").innerText=" ✅️ " +localStorage.getItem("nome9");  
+           
+           document.querySelector(".l10").innerText=" ✅️ " +localStorage.getItem("nome10");  
+           
+           
+           
+           document.querySelector(".l11").innerText=" ✅️ " +localStorage.getItem("nome11"); 
+           
+         
+           
+      
+           document.querySelector(".l12").innerText=" ✅️ " +localStorage.getItem("nome12");   
+           
+           
+   document.querySelector(".l13").innerText=" ✅️ " +localStorage.getItem("nome13"); 
+    
+    document.querySelector(".l14").innerText=" ✅️ " +localStorage.getItem("nome14");  
+     
+    document.querySelector(".l15").innerText=" ✅️ " +localStorage.getItem("nome15");  
+      
+      document.querySelector(".l16").innerText=" ✅️ " +localStorage.getItem("nome16");  
+      
+           document.querySelector(".l17").innerText=" ✅️ " +localStorage.getItem("nome17");  
+           
+           document.querySelector(".l18").innerText=" ✅️ " +localStorage.getItem("nome18");  
+           
+           document.querySelector(".l19").innerText=" ✅️ " +localStorage.getItem("nome19");  
+           
+           document.querySelector(".l20").innerText=" ✅️ " +localStorage.getItem("nome20");  
+          //reset
+
+function resetar() { document.querySelector(".erro").play();
+       let resetar = window.confirm("tem certeza que deseja resetar as listas ? essa ação ira limpar o cache. Faça isso apenas se tiver a intenção de realizar um novo sorteio.");
+       
+    if(resetar == true)  
+    {
+    document.querySelector(".s").play();
+    
+        localStorage.clear();
+        alert("tudo pronto para um novo sorteio 😃👍 ✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️");
+     
+     setTimeout(indx,2000)            }
+       
+}
+
+function indx() {
+       location.href="index.html"
+};
+
+
+
+       </script>
+    
+</body>
+
+
+</html>
